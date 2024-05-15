@@ -1,86 +1,55 @@
-# virtual keyboard
+# Virtual Keyboard
 
 **Simulates various keyboards, including numeric keyboards, extended function keyboards, and multimedia keyboards**
 
 * Author: Shunxian Wu orchid.x@outlook.com
-
-* Compatibility: NVDA-2022.1 or later
+* Compatibility: NVDA 2022.1 or later
 
 ## Overview
 
-This plugin provides several virtual keyboard modes, including numpad mode, function key extension mode, and multimedia keyboard mode.
+This add-on provides multiple virtual keyboard modes, including numpad mode, function key extension mode, and multimedia keyboard mode. When the virtual keyboard is active, specific keys simulate other keys to offer extended functionality.
 
-When the virtual keyboard is open and running, some keys will be simulated as other keys.
+### Keys Involved
 
-Keys that may be involved include:
+The keys involved in the virtual keyboard include:
 
-* 7 8 9
+* 7, 8, 9
+* y, u, i, o, p, [, ]
+* h, j, k, l, ;, '
+* m, ,, ., /
 
-* y u i o p [ ]
-
-* h j k l ; '
-
-* m , . /
-
-Switching to different virtual keyboard modes may use different keyboard keys. You can use NVDA keyboard help to get familiar with the virtual keyboard layout.
+Different virtual keyboard modes may utilize different keys. Use NVDA's input help mode to familiarize yourself with the virtual keyboard layout.
 
 ## Hotkeys
 
-* NVDA+- (minus sign), turn on/off the virtual keyboard. Do not modify the hotkey arbitrarily to avoid conflicts with virtual keyboard keys
+* **NVDA+Minus (NVDA+-):** Toggle the virtual keyboard on or off. Avoid modifying this gesture to prevent conflicts with virtual keyboard keys.
+* **Left Bracket ([):** Switch to the previous mode when the virtual keyboard is open.
+* **Right Bracket (]):** Switch to the next mode when the virtual keyboard is open.
+* **Right Control (RightControl):** Pause or resume the virtual keyboard when it is open.
 
-* Left bracket [ , switch to the previous mode when the virtual keyboard is open
+## Numpad Mode Key Mapping
 
-* Right bracket ], switch to the next mode when the virtual keyboard is open
+When the virtual keyboard is enabled and switched to numpad mode, the key mappings are as follows:
 
-* RightControl, pause or resume the virtual keyboard when the virtual keyboard is open
+* The keys 7, 8, 9 map to numpad 7, 8, 9
+* The keys u, i, o map to numpad 4, 5, 6
+* The keys j, k, l map to numpad 1, 2, 3
+* The keys m, comma, period map to numpad 0, period, enter
+* The keys y, p map to numpad slash, asterisk
+* The keys h, semicolon map to numpad plus, minus
+* The slash key maps to numpad Num Lock
 
-## Numpad Mode Key Mapping Table
+### Recommended Fingering
 
-Note: The following is the key mapping when the virtual keyboard is enabled and switched to numpad mode
+To operate the virtual numpad area with one hand, place your right thumb on the m key, your index, middle, and ring fingers on the u, i, and o keys, respectively, and your little finger on the p key.
 
-* Keyboard 7, 8, 9 correspond to numpad 7, 8, 9
+When the virtual keyboard is open, press the RightControl key at any time to pause or resume the virtual keyboard. Once paused, all keys except RightControl revert to their original 
 
-* Keyboard u, i, o correspond to numpad 4, 5, 6
-
-* Keyboard j, k, l correspond to numpad 1, 2, 3
-
-* Keyboard m, comma, period correspond to numpad 0, period, enter
-
-* Keyboard y, p correspond to numpad slash, asterisk
-
-* Keyboard h, semicolon correspond to numpad plus, minus
-
-* Keyboard slash corresponds to numpad Num Lock
-
-The recommended fingering is to place the right thumb on the m key, the index, middle, and ring fingers on the u, i, and o keys, and the little finger on the p key.
-
-Using the above fingering, you can easily perform one-handed operations in the virtual numpad area.
-
-When the virtual keyboard is open, you can press the RightControl key at any time to pause or resume the virtual keyboard. Once the virtual keyboard is paused, all keys except RightControl are restored to their original state.
-
-## Function Key Extension Mode & Applied Media Extension Mode
+## Function Key Extension Mode & Media Keys Mode
 
 In these two modes, some uncommon function keys are mapped.
 
-This is for setting up simple and quick hotkeys for easy use in setting up single-key hotkeys or hotkeys that can be executed with just NVDA modifiers in input and gestures.
-
 For specific key mappings, press NVDA+keyboard number 1 to open input help, switch to the corresponding mode, and click on the corresponding key to view.
-
-## Additional Tips
-
-When change the hotkey to turn on/off the virtual keyboard, please avoid the keys involved in the virtual keyboard.
-
-Specifically, this includes:
-
-7, 8, 9
-
-y, u, i, o, p, left bracket, right bracket
-
-h, j, k, l, semicolon, single quote
-
-n, m, comma, period, slash
-
-If you must set a hotkey related to the above keys, you can press RightControl before turning off the virtual keyboard.
 
 ## Changelog
 
