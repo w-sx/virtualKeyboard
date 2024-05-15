@@ -114,7 +114,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			if not self.enable(): return
 			msg = _('turn on') + ' , ' + self._getMode()
-		self._msg(_('virtual keyboard') + msg)
+		self._msg(_('virtual keyboard') +' '+ msg)
 
 	def enable(self):
 		if self._isHooked: return
@@ -180,7 +180,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def _getMode(self):
 		self._checkIndex()
-		return self._keyDict[self._index]['description'] + _('mode') + ' , '+str(self._index)+' / '+str(len(self._keyDict)-1)+_('items')
+		return self._keyDict[self._index]['description'] +' '+ _('mode') + ' , '+str(self._index)+' / '+str(len(self._keyDict)-1)+_('items')
 
 	def _checkIndex(self):
 		if len(self._keyDict)-1 < self._index:
