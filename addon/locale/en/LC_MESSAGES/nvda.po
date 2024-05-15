@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 'virtualKeyboard' '2024.5'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2024-05-14 22:20+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: addon\globalPlugins\virtualKeyboard.py:18
+#: addon\globalPlugins\virtualKeyboard.py:38
+msgid "numpad"
+msgstr ""
+
+#: addon\globalPlugins\virtualKeyboard.py:57
+msgid "function extension"
+msgstr ""
+
+#: addon\globalPlugins\virtualKeyboard.py:76
+msgid "multimedia"
+msgstr ""
+
+#: addon\globalPlugins\virtualKeyboard.py:98
+msgid "turn on/off virtual keyboard"
+msgstr ""
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: addon\globalPlugins\virtualKeyboard.py:99
+#: addon\globalPlugins\virtualKeyboard.py:109 buildVars.py:23
+msgid "virtual keyboard"
+msgstr ""
+
+#: addon\globalPlugins\virtualKeyboard.py:105
+msgid "turn off"
+msgstr ""
+
+#: addon\globalPlugins\virtualKeyboard.py:108
+msgid "turn on"
+msgstr ""
+
+#: addon\globalPlugins\virtualKeyboard.py:115
+msgid "Please release all keys and try again"
+msgstr ""
+
+#: addon\globalPlugins\virtualKeyboard.py:172
+msgid "mode"
+msgstr ""
+
+#: addon\globalPlugins\virtualKeyboard.py:172
+msgid "of"
+msgstr ""
+
+#: addon\globalPlugins\virtualKeyboard.py:172
+msgid "items"
+msgstr ""
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid ""
+"Emulate various keyboards, including numeric keypads, extended function "
+"keyboards, and multimedia keyboards.\n"
+"For more information, please see the help file."
+msgstr ""

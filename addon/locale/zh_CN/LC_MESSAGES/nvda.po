@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 'virtualKeyboard' '2024.5'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2024-05-14 22:20+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Shunxian Wu <orchid.x@outlook.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: addon\globalPlugins\virtualKeyboard.py:18
+#: addon\globalPlugins\virtualKeyboard.py:38
+msgid "numpad"
+msgstr "数字"
+
+#: addon\globalPlugins\virtualKeyboard.py:57
+msgid "function extension"
+msgstr "功能扩展"
+
+#: addon\globalPlugins\virtualKeyboard.py:76
+msgid "multimedia"
+msgstr "多媒体"
+
+#: addon\globalPlugins\virtualKeyboard.py:98
+msgid "turn on/off virtual keyboard"
+msgstr "开关虚拟键盘"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: addon\globalPlugins\virtualKeyboard.py:99
+#: addon\globalPlugins\virtualKeyboard.py:109 buildVars.py:23
+msgid "virtual keyboard"
+msgstr "虚拟键盘"
+
+#: addon\globalPlugins\virtualKeyboard.py:105
+msgid "turn off"
+msgstr "关闭"
+
+#: addon\globalPlugins\virtualKeyboard.py:108
+msgid "turn on"
+msgstr "打开"
+
+#: addon\globalPlugins\virtualKeyboard.py:115
+msgid "Please release all keys and try again"
+msgstr "请释放所有按键后重试"
+
+#: addon\globalPlugins\virtualKeyboard.py:172
+msgid "mode"
+msgstr "模式"
+
+#: addon\globalPlugins\virtualKeyboard.py:172
+msgid "of"
+msgstr "之"
+
+#: addon\globalPlugins\virtualKeyboard.py:172
+msgid "items"
+msgstr "项"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid ""
+"Emulate various keyboards, including numeric keypads, extended function "
+"keyboards, and multimedia keyboards.\n"
+"For more information, please see the help file."
+msgstr ""
+"模拟各种键盘，包括数字键盘、扩展功能键盘、多媒体键盘。\n"
+"有关详细信息，请参阅帮助文件。"
