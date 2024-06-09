@@ -53,7 +53,7 @@ For specific key mappings, press NVDA+keyboard number 1 to open input help, swit
 
 ## Changelog
 
-2024.5.1
+2024.6
 
 Fix the issue where numpadDelete is always locked to numpadDecimal
 

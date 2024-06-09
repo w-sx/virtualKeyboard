@@ -84,7 +84,7 @@ n、m、逗号、点、斜杠
 
 ## 更新日志
 
-2024.5.1
+2024.6
 
 修复 numpadDelete 始终锁定为 numpadDecimal 的问题
 
