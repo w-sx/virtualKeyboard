@@ -55,7 +55,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			key('l'): key('numpad3'),
 			key(';'): key('numpadMinus'),
 			key('m'): key('numpadInsert'),
-			key(','): key('numpadDecimal'),
+			key(','): key('numpadDelete'),
 			key('.'): key('numpadEnter'),
 			key('/'): key('numLock'),
 			key('\''): key('applications'),
