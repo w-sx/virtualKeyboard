@@ -1,3 +1,4 @@
+import time
 import addonHandler
 import globalPluginHandler
 from scriptHandler import script
@@ -13,94 +14,100 @@ def key(name):
 	if not name: return None
 	kig = KeyboardInputGesture.fromName(name)
 	return (kig.vkCode,kig.isExtended)
+	# here  I get the exception LookupError
+	# If I click reload plugins in the tools menu, the add-on will load successfully after a while.
+	# I did it through the property (delayed, lazy execution)
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	_seizedKeys = None
 	_isHooked = False
 	_index = 1
 	_oriNumKey = False
-	_keyDict = [
-		{
-			key('7'): key('numLockNumpad7'),
-			key('8'): key('numLockNumpad8'),
-			key('9'): key('numLockNumpad9'),
-			key('y'): key('numpadDivide'),
-			key('u'): key('numLockNumpad4'),
-			key('i'): key('numLockNumpad5'),
-			key('o'): key('numLockNumpad6'),
-			key('p'): key('numpadMultiply'),
-			key('h'): key('numpadPlus'),
-			key('j'): key('numLockNumpad1'),
-			key('k'): key('numLockNumpad2'),
-			key('l'): key('numLockNumpad3'),
-			key(';'): key('numpadMinus'),
-			key('m'): key('numLockNumpad0'),
-			key(','): key('numpadDecimal'),
-			key('.'): key('numpadEnter'),
-			key('/'): key('numLock'),
-			key('\''): key('applications'),
-		} , {
-			'description' : _('numpad'),
-			key('7'): key('numpad7'),
-			key('8'): key('numpad8'),
-			key('9'): key('numpad9'),
-			key('y'): key('numpadDivide'),
-			key('u'): key('numpad4'),
-			key('i'): key('numpad5'),
-			key('o'): key('numpad6'),
-			key('p'): key('numpadMultiply'),
-			key('h'): key('numpadPlus'),
-			key('j'): key('numpad1'),
-			key('k'): key('numpad2'),
-			key('l'): key('numpad3'),
-			key(';'): key('numpadMinus'),
-			key('m'): key('numpadInsert'),
-			key(','): key('numpadDelete'),
-			key('.'): key('numpadEnter'),
-			key('/'): key('numLock'),
-			key('\''): key('applications'),
-		} , {
-			"description" : _('function extension'),
-			key('7'): key('f22'),
-			key('8'): key('f23'),
-			key('9'): key('f24'),
-			#key('y'): key(''),
-			key('u'): key('f19'),
-			key('i'): key('f20'),
-			key('o'): key('f21'),
-			#key('p'): key(''),
-			#key('h'): key(''),
-			key('j'): key('f16'),
-			key('k'): key('f17'),
-			key('l'): key('f18'),
-			#key(';'): key(''),
-			key('m'): key('f13'),
-			key(','): key('f14'),
-			key('.'): key('f15'),
-			#key('/'): key(''),
-			key('\''): key('applications'),
-		} , {
-			"description" : _("multimedia"),
-			key('7'): key('browserSearch'),
-			key('8'): key('browserHome'),
-			key('9'): key('browserFavorites'),
-			key('y'): key('launchMediaPlayer'),
-			key('u'): key('volumeDown'),
-			key('i'): key('mediaStop'), #key('volumeMute'),
-			key('o'): key('volumeUp'),
-			key('p'): key('launchApp1'),
-			key('h'): key('launchMail'),
-			key('j'): key('mediaPrevTrack'),
-			key('k'): key('mediaPlayPause'),
-			key('l'): key('mediaNextTrack'),
-			key(';'): key('launchApp2'),
-			key('m'): key('browserBack'),
-			key(','): key('browserRefresh'),
-			key('.'): key('browserForward'),
-			#key('/'): key(''),
-			key('\''): key('applications'),
-		}
-	]
+	@property
+	def _keyDict(self):
+		return [
+			{
+				key('7'): key('numLockNumpad7'),
+				key('8'): key('numLockNumpad8'),
+				key('9'): key('numLockNumpad9'),
+				key('y'): key('numpadDivide'),
+				key('u'): key('numLockNumpad4'),
+				key('i'): key('numLockNumpad5'),
+				key('o'): key('numLockNumpad6'),
+				key('p'): key('numpadMultiply'),
+				key('h'): key('numpadPlus'),
+				key('j'): key('numLockNumpad1'),
+				key('k'): key('numLockNumpad2'),
+				key('l'): key('numLockNumpad3'),
+				key(';'): key('numpadMinus'),
+				key('m'): key('numLockNumpad0'),
+				key(','): key('numpadDecimal'),
+				key('.'): key('numpadEnter'),
+				key('/'): key('numLock'),
+				key('\''): key('applications'),
+			} , {
+				'description' : _('numpad'),
+				key('7'): key('numpad7'),
+				key('8'): key('numpad8'),
+				key('9'): key('numpad9'),
+				key('y'): key('numpadDivide'),
+				key('u'): key('numpad4'),
+				key('i'): key('numpad5'),
+				key('o'): key('numpad6'),
+				key('p'): key('numpadMultiply'),
+				key('h'): key('numpadPlus'),
+				key('j'): key('numpad1'),
+				key('k'): key('numpad2'),
+				key('l'): key('numpad3'),
+				key(';'): key('numpadMinus'),
+				key('m'): key('numpadInsert'),
+				key(','): key('numpadDelete'),
+				key('.'): key('numpadEnter'),
+				key('/'): key('numLock'),
+				key('\''): key('applications'),
+			} , {
+				"description" : _('function extension'),
+				key('7'): key('f22'),
+				key('8'): key('f23'),
+				key('9'): key('f24'),
+				#key('y'): key(''),
+				key('u'): key('f19'),
+				key('i'): key('f20'),
+				key('o'): key('f21'),
+				#key('p'): key(''),
+				#key('h'): key(''),
+				key('j'): key('f16'),
+				key('k'): key('f17'),
+				key('l'): key('f18'),
+				#key(';'): key(''),
+				key('m'): key('f13'),
+				key(','): key('f14'),
+				key('.'): key('f15'),
+				#key('/'): key(''),
+				key('\''): key('applications'),
+			} , {
+				"description" : _("multimedia"),
+				key('7'): key('browserSearch'),
+				key('8'): key('browserHome'),
+				key('9'): key('browserFavorites'),
+				key('y'): key('launchMediaPlayer'),
+				key('u'): key('volumeDown'),
+				key('i'): key('mediaStop'), #key('volumeMute'),
+				key('o'): key('volumeUp'),
+				key('p'): key('launchApp1'),
+				key('h'): key('launchMail'),
+				key('j'): key('mediaPrevTrack'),
+				key('k'): key('mediaPlayPause'),
+				key('l'): key('mediaNextTrack'),
+				key(';'): key('launchApp2'),
+				key('m'): key('browserBack'),
+				key(','): key('browserRefresh'),
+				key('.'): key('browserForward'),
+				#key('/'): key(''),
+				key('\''): key('applications'),
+			}
+		]
+
 
 	@script(
 		description=_('turn on/off virtual keyboard'),
