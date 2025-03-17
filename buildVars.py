@@ -26,9 +26,9 @@ addon_info = {
 	"addon_description": _("""Emulate various keyboards, including numeric keypads, extended function keyboards, and multimedia keyboards.
 For more information, please see the help file."""),
 	# version
-	"addon_version": "2024.6",
+	"addon_version": "2025.3",
 	# Author(s)
-	"addon_author": "Shunxian Wu <orchid.x@outlook.com>",
+	"addon_author": "Shunxian Wu <PurrHare@outlook.com>",
 	# URL for the add-on documentation support
 	"addon_url": "https://www.nvdacn.com/",
 	# URL for the add-on repository where the source code can be found
