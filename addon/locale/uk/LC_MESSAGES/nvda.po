@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-01-26 12:49+0200\n"
+"PO-Revision-Date: 2026-01-26 13:27+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-Basepath: .\n"
+
+#: addon\globalPlugins\virtualKeyboard.py:49
+msgid "numpad"
+msgstr "цифровий блок"
+
+#: addon\globalPlugins\virtualKeyboard.py:69
+msgid "function extension"
+msgstr "розширення функцій"
+
+#: addon\globalPlugins\virtualKeyboard.py:89
+msgid "multimedia"
+msgstr "мультимедіа"
+
+#: addon\globalPlugins\virtualKeyboard.py:113
+msgid "turn on/off virtual keyboard"
+msgstr "увімкнути/вимкнути віртуальну клавіатуру"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: addon\globalPlugins\virtualKeyboard.py:114
+#: addon\globalPlugins\virtualKeyboard.py:124 buildVars.py:23
+msgid "virtual keyboard"
+msgstr "віртуальна клавіатура"
+
+#: addon\globalPlugins\virtualKeyboard.py:120
+msgid "turn off"
+msgstr "вимкнути"
+
+#: addon\globalPlugins\virtualKeyboard.py:123
+msgid "turn on"
+msgstr "увімкнути"
+
+#: addon\globalPlugins\virtualKeyboard.py:130
+msgid "Please release all keys and try again"
+msgstr "Відпустіть усі клавіші та повторіть спробу"
+
+#: addon\globalPlugins\virtualKeyboard.py:190
+msgid "mode"
+msgstr "режим"
+
+#: addon\globalPlugins\virtualKeyboard.py:190
+msgid "items"
+msgstr "елементи"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid ""
+"Emulate various keyboards, including numeric keypads, extended function "
+"keyboards, and multimedia keyboards.\n"
+"For more information, please see the help file."
+msgstr ""
+"Емулюйте різні клавіатури, включаючи цифрові клавіатури, клавіатури з "
+"розширеними функціями та мультимедійні клавіатури.\n"
+"Для отримання додаткової інформації див. файл довідки."
