@@ -2,7 +2,7 @@
 
 **Simulates various keyboards, including numeric keyboards, extended function keyboards, and multimedia keyboards**
 
-* Author: Shunxian Wu orchid.x@outlook.com
+* Author: Shunxian Wu <PurrHare@outlook.com>
 * Compatibility: NVDA 2022.1 or later
 
 ## Overview
@@ -25,7 +25,7 @@ Different virtual keyboard modes may utilize different keys. Use NVDA's input he
 * **NVDA+Minus (NVDA+-):** Toggle the virtual keyboard on or off. Avoid modifying this gesture to prevent conflicts with virtual keyboard keys.
 * **Left Bracket ([):** Switch to the previous mode when the virtual keyboard is open.
 * **Right Bracket (]):** Switch to the next mode when the virtual keyboard is open.
-* **Right Control (RightControl):** Pause or resume the virtual keyboard when it is open.
+* **Right Alt (RightAlt):** Pause or resume the virtual keyboard when it is open.
 
 ## Numpad Mode Key Mapping
 
@@ -43,7 +43,7 @@ When the virtual keyboard is enabled and switched to numpad mode, the key mappin
 
 To operate the virtual numpad area with one hand, place your right thumb on the m key, your index, middle, and ring fingers on the u, i, and o keys, respectively, and your little finger on the p key.
 
-When the virtual keyboard is open, press the RightControl key at any time to pause or resume the virtual keyboard. Once paused, all keys except RightControl revert to their original 
+When the virtual keyboard is open, press the RightAlt key at any time to pause or resume the virtual keyboard. Once paused, all keys except RightAlt revert to their original 
 
 ## Function Key Extension Mode & Media Keys Mode
 
@@ -52,6 +52,12 @@ In these two modes, some uncommon function keys are mapped.
 For specific key mappings, press NVDA+keyboard number 1 to open input help, switch to the corresponding mode, and click on the corresponding key to view.
 
 ## Changelog
+
+2026.5
+
+Added a cursor mode
+
+changed the pause key to right Alt
 
 2024.6
 
