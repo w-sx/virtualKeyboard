@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'virtualKeyboard' '2024.5'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2024-05-14 22:20+0800\n"
+"POT-Creation-Date: 2026-05-10 00:33+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Shunxian Wu <orchid.x@outlook.com>\n"
 "Language-Team: \n"
@@ -17,52 +17,51 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: addon\globalPlugins\virtualKeyboard.py:18
-#: addon\globalPlugins\virtualKeyboard.py:38
+#: addon\globalPlugins\virtualKeyboard.py:49
 msgid "numpad"
 msgstr "数字"
 
-#: addon\globalPlugins\virtualKeyboard.py:57
+#: addon\globalPlugins\virtualKeyboard.py:69
+msgid "cursor"
+msgstr "光标"
+
+#: addon\globalPlugins\virtualKeyboard.py:81
 msgid "function extension"
 msgstr "功能扩展"
 
-#: addon\globalPlugins\virtualKeyboard.py:76
+#: addon\globalPlugins\virtualKeyboard.py:101
 msgid "multimedia"
 msgstr "多媒体"
 
-#: addon\globalPlugins\virtualKeyboard.py:98
+#: addon\globalPlugins\virtualKeyboard.py:125
 msgid "turn on/off virtual keyboard"
 msgstr "开关虚拟键盘"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
 #. to be shown on installation and add-on information found in Add-ons Manager.
-#: addon\globalPlugins\virtualKeyboard.py:99
-#: addon\globalPlugins\virtualKeyboard.py:109 buildVars.py:23
+#: addon\globalPlugins\virtualKeyboard.py:126
+#: addon\globalPlugins\virtualKeyboard.py:136 buildVars.py:23
 msgid "virtual keyboard"
 msgstr "虚拟键盘"
 
-#: addon\globalPlugins\virtualKeyboard.py:105
+#: addon\globalPlugins\virtualKeyboard.py:132
 msgid "turn off"
 msgstr "关闭"
 
-#: addon\globalPlugins\virtualKeyboard.py:108
+#: addon\globalPlugins\virtualKeyboard.py:135
 msgid "turn on"
 msgstr "打开"
 
-#: addon\globalPlugins\virtualKeyboard.py:115
+#: addon\globalPlugins\virtualKeyboard.py:142
 msgid "Please release all keys and try again"
 msgstr "请释放所有按键后重试"
 
-#: addon\globalPlugins\virtualKeyboard.py:172
+#: addon\globalPlugins\virtualKeyboard.py:202
 msgid "mode"
 msgstr "模式"
 
-#: addon\globalPlugins\virtualKeyboard.py:172
-msgid "of"
-msgstr "之"
-
-#: addon\globalPlugins\virtualKeyboard.py:172
+#: addon\globalPlugins\virtualKeyboard.py:202
 msgid "items"
 msgstr "项"
 
@@ -76,3 +75,6 @@ msgid ""
 msgstr ""
 "模拟各种键盘，包括数字键盘、扩展功能键盘、多媒体键盘。\n"
 "有关详细信息，请参阅帮助文件。"
+
+#~ msgid "of"
+#~ msgstr "之"
