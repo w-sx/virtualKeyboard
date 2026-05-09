@@ -144,7 +144,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def _keyDown(self, vkCode, scanCode, extended, injected):
 		self._token = 0
-		if vkCode==163: self._token = 1
+		if vkCode==165: self._token = 1
 		if not self._isSleeping:
 			if self._downKeepKeys(vkCode) == -1: return False
 			#if vkCode==46 and self._index==1:
@@ -160,7 +160,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		return self._oriKeyDown(vkCode, scanCode, extended, injected)
 
 	def _keyUp(self, vkCode, scanCode, extended, injected):
-		if vkCode==163 and self._token==1: self._sleep()
+		if vkCode==165 and self._token==1: self._sleep()
 		self._token = 0
 		vk = (vkCode,extended)
 		if vk in self._seizedKeys:
