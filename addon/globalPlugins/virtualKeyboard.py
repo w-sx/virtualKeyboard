@@ -66,6 +66,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				key('/'): key('numLock'),
 				key('\''): key('applications'),
 			} , {
+				"description": _("cursor"),
+				key('7'): key('home'),
+				key('8'): key('upArrow'),
+				key('9'): key('pageUp'),
+				key('u'): key('leftArrow'),
+				key('i'): key('numpadEnter'),
+				key('o'): key('rightArrow'),      # 右
+				key('j'): key('pageDown'),
+				key('k'): key('downArrow'),
+				key('l'): key('end'),
+				key('\''): key('applications'),
+			} , {
 				"description" : _('function extension'),
 				key('7'): key('f22'),
 				key('8'): key('f23'),
