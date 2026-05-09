@@ -73,9 +73,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				key('u'): key('leftArrow'),
 				key('i'): key('numpadEnter'),
 				key('o'): key('rightArrow'),      # 右
-				key('j'): key('pageDown'),
+				key('j'): key('end'),
 				key('k'): key('downArrow'),
-				key('l'): key('end'),
+				key('l'): key('pageDown'),
 				key('\''): key('applications'),
 			} , {
 				"description" : _('function extension'),
