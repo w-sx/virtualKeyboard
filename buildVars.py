@@ -26,7 +26,7 @@ addon_info = {
 	"addon_description": _("""Emulate various keyboards, including numeric keypads, extended function keyboards, and multimedia keyboards.
 For more information, please see the help file."""),
 	# version
-	"addon_version": "2026.1",
+	"addon_version": "2026.5",
 	# Author(s)
 	"addon_author": "Shunxian Wu <PurrHare@outlook.com>",
 	# URL for the add-on documentation support
@@ -38,7 +38,7 @@ For more information, please see the help file."""),
 	# Minimum NVDA version supported (e.g. "2018.3.0", minor version is optional)
 	"addon_minimumNVDAVersion": "2022.1",
 	# Last NVDA version supported/tested (e.g. "2018.4.0", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion": "2025.1",
+	"addon_lastTestedNVDAVersion": "2026.1",
 	# Add-on update channel (default is None, denoting stable releases,
 	# and for development releases, use "dev".)
 	# Do not change unless you know what you are doing!
